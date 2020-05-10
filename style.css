@@ -1,0 +1,66 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  $border: solid 1px red;
+}
+body{
+  display:grid;
+  place-items:center;
+}
+.icon{
+  width:70px;
+  height:70px;
+  background:black;
+  transition:0.5s;
+}
+.bike{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-black.svg);
+  background-size:cover;
+}
+.bell{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bell-black.svg);
+  background-size:cover;
+}
+.arrow{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-arrow-black.svg);
+  background-size:cover;
+}
+.bike:hover{
+  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-black.svg);
+  background-size:cover;
+  background-color:#478;
+  transform:scale(2);
+}
+.bell:hover{
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bell-black.svg);
+  background-size:cover;
+  background-color:red;
+  transform:scalex(2);
+}
+.arrow:hover{
+   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-arrow-black.svg);
+  background-size:cover;
+  background-color:rgba(54,117,1810.6);
+  transform:scale(2) rotate(45deg);
+}
+.smile{
+  animation-name: smile;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+}
+@keyframes smile{
+  0%{
+    background:#465;
+}
+25%{
+  background:#112;
+}
+50%{
+  background:#d45;
+  transform:scale(2.25) rotate(-340deg);
+}
+100%{
+  background:#h465;
+  }}
